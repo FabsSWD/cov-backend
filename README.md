@@ -4,7 +4,7 @@ Backend for X-ray image classification using **Convolutional Neural Networks (CN
 
 ---
 
-## Index
+## 📋 Index
 
 - [Frontend](https://github.com/FabsSWD/cov-frontend)
 - [Backend](https://github.com/FabsSWD/cov-backend)
