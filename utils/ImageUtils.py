@@ -1,6 +1,7 @@
 import numpy as np
 from PIL import Image
 
+
 class ImageUtils:
     @staticmethod
     def validate_image(image):

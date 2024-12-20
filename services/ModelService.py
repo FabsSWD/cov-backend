@@ -1,5 +1,6 @@
 import torch
 
+
 class ModelService:
     def __init__(self, model_loader):
         self.model_loader = model_loader

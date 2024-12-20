@@ -1,5 +1,6 @@
 import torch
 
+
 class ModelLoader:
     def __init__(self, model_paths, model_class):
         self.models = {}

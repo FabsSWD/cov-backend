@@ -5,6 +5,7 @@ import io
 import base64
 import torch
 
+
 class ImageController:
     def __init__(self, app, model_service, preprocessing_service):
         self.app = app

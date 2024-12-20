@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 
+
 class MetricsController:
     def __init__(self, app):
         self.app = app
@@ -9,22 +10,21 @@ class MetricsController:
         @self.app.route('/metrics', methods=['GET'])
         def metrics():
             metrics_data = {
-                "models": ["raw", "bilateral", "canny"],
-                "metrics": {
-                    "accuracy": {
-                        "raw": 0.96,
-                        "bilateral": 0.90,
-                        "canny": 0.85
+                "models": {
+                    "raw": {
+                        "normal": 0.74,
+                        "covid": 1.00,
+                        "pneumonia": 1.00
                     },
-                    "precision": {
-                        "raw": 0.95,
-                        "bilateral": 0.88,
-                        "canny": 0.82
+                    "canny": {
+                        "normal": 0.80,
+                        "covid": 0.70,
+                        "pneumonia": 1.00
                     },
-                    "recall": {
-                        "raw": 0.94,
-                        "bilateral": 0.89,
-                        "canny": 0.84
+                    "bilateral": {
+                        "normal": 1.00,
+                        "covid": 1.00,
+                        "pneumonia": 0.67
                     }
                 }
             }

@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 class PreprocessingService:
     def apply_bilateral_filter(self, image):
         return cv2.bilateralFilter(image, 9, 75, 75)
